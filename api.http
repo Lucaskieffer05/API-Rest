@@ -11,7 +11,7 @@ POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
-    "title": "Prueba de movie",
+    "title": "Prueba luego MVC",
     "year": 1972,
     "duration" : 180,
     "director": "Francis Ford Coppola",
@@ -24,11 +24,14 @@ Content-Type: application/json
 
 
 ### Actualizar una pelicula
-PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:1234/movies/9e4f279d-b31c-4c11-bac3-76d603c8f2df
 Content-Type: application/json
 
 {
     "id": 1,
     "title": "Prueba de movie",
-    "year": 2025
+    "year": 2069
 }
+
+### Eliminar una pelicula
+DELETE http://localhost:1234/movies/9e4f279d-b31c-4c11-bac3-76d603c8f2df
